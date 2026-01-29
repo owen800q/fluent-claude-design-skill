@@ -6,98 +6,114 @@ A comprehensive design skill based on Microsoft's [Fluent 2 Design System](https
 
 | File | Purpose |
 |------|---------|
-| `skill.md` | Standard Claude Code skill file |
-| `fluent-design-skill.txt` | Alternative text format for system prompts |
-| `FLUENT_UI_DESIGN_SKILL.md` | Comprehensive reference documentation |
+| `skill.md` | Main skill file for Claude Code |
+| `reference.md` | Comprehensive reference documentation |
 
 ## Usage
 
-### With Claude Code
+### Claude Code (CLI)
 
-Add the skill to your Claude Code configuration:
+**Option 1: Add to CLAUDE.md (Recommended)**
 
-```bash
-# Option 1: Include in project instructions
-# Add to your .claude/settings.json or use /add-context command
+Create or edit `CLAUDE.md` in your project root and include the skill:
 
-# Option 2: Reference in conversation
-/add-context fluent-design-skill.txt
+```markdown
+# Project Instructions
+
+## Design System
+This project uses Microsoft Fluent 2 Design System.
+See: https://github.com/anthropics/fluent-claude-design-skill/blob/main/skill.md
+
+<!-- Or copy the full content of skill.md here -->
 ```
 
-### With Claude Chat (claude.ai)
+**Option 2: Clone and reference locally**
 
-1. Start a new conversation
-2. Paste the contents of `fluent-design-skill.txt` as a system prompt or initial context
-3. Or use Claude Projects to add it as project knowledge
+```bash
+# Clone this repo
+git clone https://github.com/anthropics/fluent-claude-design-skill.git
 
-### As Custom Instructions
+# In your project, reference it in CLAUDE.md
+echo "See ../fluent-claude-design-skill/skill.md for Fluent design guidelines" >> CLAUDE.md
+```
 
-Copy the skill content into your custom instructions to have Fluent design expertise available in all conversations.
+**Option 3: Use /add-context command**
+
+During a Claude Code session:
+```
+/add-context /path/to/skill.md
+```
+
+### Claude.ai (Web)
+
+**Option 1: Create a Project (Recommended)**
+
+1. Go to [claude.ai](https://claude.ai) → Projects
+2. Create new project (e.g., "Fluent UI Design")
+3. Add `skill.md` content to Project Knowledge
+4. Start conversations within that project
+
+**Option 2: Paste at conversation start**
+
+1. Copy contents of `skill.md`
+2. Start new conversation
+3. Paste as first message: "Use these Fluent design guidelines for our conversation: [paste content]"
+
+**Option 3: Custom Instructions**
+
+1. Go to Settings → Custom Instructions
+2. Paste key sections from `skill.md`
+3. Available in all future conversations
 
 ## What Claude Can Help With
 
-Once equipped with this skill, Claude can:
+| Task | Example Prompt |
+|------|---------------|
+| Design Review | "Review this button design for Fluent compliance" |
+| Typography | "What's the correct type scale for a card header?" |
+| Accessibility | "Check if this color meets WCAG contrast requirements" |
+| Components | "What elevation/shadow should I use for a dropdown?" |
+| CSS Generation | "Generate Fluent-style CSS for a primary button" |
+| Layout | "How should I space these form fields?" |
 
-### Design Review
-- Evaluate UI designs against Fluent principles
-- Check accessibility compliance
-- Identify spacing and typography issues
-- Suggest improvements
-
-### Component Guidance
-- Recommend appropriate Fluent components
-- Explain component usage patterns
-- Provide correct token values
-- Guide state handling
-
-### Accessibility
-- Check contrast ratios
-- Verify keyboard navigation
-- Ensure screen reader compatibility
-- Validate touch targets
-
-### Code Implementation
-- Generate Fluent-compliant CSS
-- Suggest correct design tokens
-- Implement responsive breakpoints
-- Create accessible markup
-
-## Example Prompts
+## Example Session
 
 ```
-"Review this button design for Fluent compliance"
+User: I'm building a settings page. What typography should I use?
 
-"What's the correct typography scale for a card header?"
+Claude: For a settings page following Fluent guidelines:
 
-"Help me create an accessible form following Fluent guidelines"
+- **Page title**: Title 1 (Semibold, 32px/40px)
+- **Section headers**: Subtitle 1 (Semibold, 20px/26px)
+- **Setting labels**: Body 1 (Regular, 14px/20px)
+- **Helper text**: Caption 1 (Regular, 12px/16px)
 
-"What elevation/shadow should I use for a dropdown menu?"
-
-"Generate CSS for a Fluent-style primary button"
-
-"Check if this color combination meets WCAG contrast requirements"
-
-"How should I handle focus states in my navigation?"
+Use Segoe UI on Windows, San Francisco on Mac/iOS, or Roboto on Android.
 ```
 
-## Fluent Design Principles
+## Quick Reference
 
-The skill is based on Fluent 2's four core principles:
+### Spacing (4px base)
+| Token | Value |
+|-------|-------|
+| XS | 4px |
+| S | 8px |
+| M | 12px |
+| L | 16px |
+| XL | 20px |
 
-1. **Natural on Every Platform** - Adapt to platform conventions
-2. **Built for Focus** - Minimize clutter, prioritize content
-3. **One for All, All for One** - Inclusive, accessible design
-4. **Unmistakably Microsoft** - Consistent brand identity
+### Shadows
+| Level | Use |
+|-------|-----|
+| Shadow 4 | Cards |
+| Shadow 8 | Dropdowns |
+| Shadow 16 | Popovers |
+| Shadow 64 | Dialogs |
 
-## Key Features
-
-- **Color System**: Neutral, shared, and brand palettes with semantic meanings
-- **Typography**: Complete type scale with platform-specific fonts
-- **Spacing**: 4px base unit system with standardized tokens
-- **Elevation**: Shadow hierarchy from cards to dialogs
-- **Motion**: Duration and easing guidelines with accessibility
-- **Components**: Button, input, card, dialog patterns
-- **Accessibility**: WCAG 2.1 AA compliance guidance
+### Contrast (WCAG)
+- Text: 4.5:1 minimum
+- Large text: 3:1 minimum
+- UI elements: 3:1 minimum
 
 ## Resources
 
