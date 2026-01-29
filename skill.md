@@ -1,8 +1,11 @@
+---
+name: Fluent UI/UX Design
+description: Expert knowledge of Microsoft's Fluent 2 Design System for UI/UX design decisions, component usage, accessibility guidance, and creating visually consistent Microsoft-style interfaces.
+---
+
 # Fluent UI/UX Design Skill for Claude
 
 This document provides Claude with comprehensive knowledge of Microsoft's Fluent 2 Design System to assist users with UI/UX design decisions, component usage, accessibility guidance, and creating visually consistent Microsoft-style interfaces.
-
----
 
 ## Table of Contents
 
