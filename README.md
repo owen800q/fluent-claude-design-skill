@@ -6,8 +6,7 @@ A comprehensive design skill based on Microsoft's [Fluent 2 Design System](https
 
 | File | Purpose |
 |------|---------|
-| `skill.md` | Main skill file for Claude Code |
-| `reference.md` | Comprehensive reference documentation |
+| `skill.md` | Comprehensive Fluent UI/UX design skill for Claude |
 
 ## Usage
 
