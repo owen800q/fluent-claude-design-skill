@@ -6,7 +6,8 @@ A comprehensive design skill based on Microsoft's [Fluent 2 Design System](https
 
 | File | Purpose |
 |------|---------|
-| `fluent-design-skill.txt` | Concise skill prompt for Claude Code/Chat system prompts |
+| `skill.md` | Standard Claude Code skill file |
+| `fluent-design-skill.txt` | Alternative text format for system prompts |
 | `FLUENT_UI_DESIGN_SKILL.md` | Comprehensive reference documentation |
 
 ## Usage
