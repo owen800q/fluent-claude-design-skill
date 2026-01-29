@@ -6,7 +6,7 @@ A comprehensive design skill based on Microsoft's [Fluent 2 Design System](https
 
 | File | Purpose |
 |------|---------|
-| `skill.md` | Comprehensive Fluent UI/UX design skill for Claude |
+| `SKILL.md` | Comprehensive Fluent UI/UX design skill for Claude |
 
 ## Usage
 
@@ -21,9 +21,9 @@ Create or edit `CLAUDE.md` in your project root and include the skill:
 
 ## Design System
 This project uses Microsoft Fluent 2 Design System.
-See: https://github.com/anthropics/fluent-claude-design-skill/blob/main/skill.md
+See: https://github.com/anthropics/fluent-claude-design-skill/blob/main/SKILL.md
 
-<!-- Or copy the full content of skill.md here -->
+<!-- Or copy the full content of SKILL.md here -->
 ```
 
 **Option 2: Clone and reference locally**
@@ -33,14 +33,14 @@ See: https://github.com/anthropics/fluent-claude-design-skill/blob/main/skill.md
 git clone https://github.com/anthropics/fluent-claude-design-skill.git
 
 # In your project, reference it in CLAUDE.md
-echo "See ../fluent-claude-design-skill/skill.md for Fluent design guidelines" >> CLAUDE.md
+echo "See ../fluent-claude-design-skill/SKILL.md for Fluent design guidelines" >> CLAUDE.md
 ```
 
 **Option 3: Use /add-context command**
 
 During a Claude Code session:
 ```
-/add-context /path/to/skill.md
+/add-context /path/to/SKILL.md
 ```
 
 ### Claude.ai (Web)
@@ -49,19 +49,19 @@ During a Claude Code session:
 
 1. Go to [claude.ai](https://claude.ai) → Projects
 2. Create new project (e.g., "Fluent UI Design")
-3. Add `skill.md` content to Project Knowledge
+3. Add `SKILL.md` content to Project Knowledge
 4. Start conversations within that project
 
 **Option 2: Paste at conversation start**
 
-1. Copy contents of `skill.md`
+1. Copy contents of `SKILL.md`
 2. Start new conversation
 3. Paste as first message: "Use these Fluent design guidelines for our conversation: [paste content]"
 
 **Option 3: Custom Instructions**
 
 1. Go to Settings → Custom Instructions
-2. Paste key sections from `skill.md`
+2. Paste key sections from `SKILL.md`
 3. Available in all future conversations
 
 ## What Claude Can Help With
