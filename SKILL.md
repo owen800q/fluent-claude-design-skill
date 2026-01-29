@@ -1,5 +1,5 @@
 ---
-name: Fluent UI/UX Design
+name: fluent-uiux-design
 description: Expert knowledge of Microsoft's Fluent 2 Design System for UI/UX design decisions, component usage, accessibility guidance, and creating visually consistent Microsoft-style interfaces.
 ---
 
